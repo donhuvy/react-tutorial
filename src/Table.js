@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const TableHeader = () => { 
+const TableHeader = () => {
     return (
         <thead>
             <tr>
@@ -22,14 +22,12 @@ const TableBody = props => {
             </tr>
         );
     });
-
     return <tbody>{rows}</tbody>;
 }
 
 class Table extends Component {
     render() {
         const { characterData, removeCharacter } = this.props;
-
         return (
             <table>
                 <TableHeader />

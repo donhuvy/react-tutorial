@@ -3,13 +3,13 @@ import Table from './Table';
 import Form from './Form';
 
 class App extends Component {
+
     state = {
         characters: []
     };
 
     removeCharacter = index => {
         const { characters } = this.state;
-    
         this.setState({
             characters: characters.filter((character, i) => { 
                 return i !== index;
@@ -23,7 +23,6 @@ class App extends Component {
 
     render() {
         const { characters } = this.state;
-        
         return (
             <div className="container">
                 <h1>React Tutorial</h1>
@@ -37,6 +36,7 @@ class App extends Component {
             </div>
         );
     }
+
 }
 
 export default App;
